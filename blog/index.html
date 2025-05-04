@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Patitas Unidas</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/blog.js" defer></script>
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Blog sobre cuidado animal, historias de adopción y consejos para mascotas">
+    <meta name="keywords" content="blog mascotas, adopción animales, cuidado mascotas, consejos veterinarios">
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Blog - Patitas Unidas">
+    <meta property="og:description" content="Encuentra consejos, historias y guías sobre el cuidado de mascotas">
+    <meta property="og:image" content="../img/blog/og-image.jpg">
+</head>
+<body class="blog">
+    <!-- Encabezado -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo/patitasunidaslogo.svg" alt="Patitas Unidas Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="../index.html#refugios">Refugios</a></li>
+                    <li><a href="../index.html#mascotas">Mascotas</a></li>
+                    <li><a href="../index.html#adopcion">Adopción</a></li>
+                    <li><a href="index.html" class="active">Blog</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero/Encabezado visual del blog -->
+    <section id="blog-hero">
+        <div class="blog-hero-bg"></div>
+        <div class="container blog-hero-content">
+            <div class="blog-hero-icon">
+                <i class="fas fa-paw"></i>
+            </div>
+            <h1>Blog Patitas Unidas</h1>
+            <p class="blog-hero-desc">
+                Historias, consejos y recursos para los amantes de los animales.<br>
+                Inspírate, aprende y comparte el amor por las mascotas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main id="blog-content">
+        <div class="container">
+            <div class="blog-filters">
+                <div class="search-container">
+                    <input type="search" id="blogSearch" placeholder="Buscar artículos...">
+                    <button type="button" aria-label="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="">Todas las categorías</option>
+                        <option value="cuidados">Cuidados</option>
+                        <option value="adopcion">Adopción</option>
+                        <option value="salud">Salud</option>
+                    </select>
+                    <select id="dateFilter">
+                        <option value="">Cualquier fecha</option>
+                        <option value="month">Último mes</option>
+                        <option value="year">Último año</option>
+                    </select>
+                </div>
+            </div>
+            <div class="blog-container">
+                <!-- Artículos -->
+                <div class="blog-posts">
+                    <!-- Artículo 1 -->
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <div class="post-category"><span>Cuidados</span></div>
+                            <h2>Cuidados esenciales para tu mascota en verano</h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 10 mayo, 2023</span>
+                                <span class="post-author"><i class="far fa-user"></i> Por Equipo Patitas Unidas</span>
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <img src="../img/banner/cuidado-de-mascota-.png" alt="Cuidados para mascotas en verano">
+                        </div>
+                        <div class="post-excerpt">
+                            <p>El verano puede ser una época desafiante para nuestras mascotas. Con las altas temperaturas, es fundamental tomar medidas preventivas para garantizar su bienestar. Aquí te compartimos una guía práctica sobre hidratación, paseos inteligentes y cómo reconocer golpes de calor.</p>
+                        </div>
+                        <div class="post-tags">
+                            <span>Etiquetas:</span>
+                            <a href="categories/cuidados.html">Cuidados</a>
+                            <a href="categories/salud.html">Salud</a>
+                            <a href="categories/verano.html">Verano</a>
+                        </div>
+                        <a href="articles/article-1.html" class="read-more">Leer más</a>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <div class="post-category"><span>Adopción</span></div>
+                            <h2>Beneficios de adoptar mascotas adultas</h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 2 mayo, 2023</span>
+                                <span class="post-author"><i class="far fa-user"></i> Por Equipo Patitas Unidas</span>
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <img src="../img/banner/beneficios-de-adoptar-mascotas-adultas-.png" alt="Perro adulto siendo abrazado">
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Adoptar mascotas adultas es una experiencia gratificante que muchos pasan por alto. Descubre por qué podrían ser la mejor opción para tu hogar, desde su personalidad conocida hasta las ventajas prácticas que ofrecen.</p>
+                        </div>
+                        <div class="post-tags">
+                            <span>Etiquetas:</span>
+                            <a href="categories/adopcion.html">Adopción</a>
+                            <a href="categories/cuidados.html">Cuidados</a>
+                            <a href="categories/consejos.html">Consejos</a>
+                        </div>
+                        <a href="articles/article-2.html" class="read-more">Leer más</a>
+                    </article>
+
+                    <!-- Artículo 3 -->
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <div class="post-category"><span>Consejos</span></div>
+                            <h2>5 consejos clave para tu primera adopción</h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 15 mayo, 2023</span>
+                                <span class="post-author"><i class="far fa-user"></i> Por Equipo Patitas Unidas</span>
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <img src="../img/blog/post3.jpg" alt="Primera adopción">
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Adoptar una mascota por primera vez es una de las experiencias más gratificantes, pero también conlleva una gran responsabilidad. Te compartimos 5 consejos clave para que esta experiencia sea exitosa tanto para ti como para tu nueva mascota.</p>
+                        </div>
+                        <div class="post-tags">
+                            <span>Etiquetas:</span>
+                            <a href="categories/adopcion.html">Adopción</a>
+                            <a href="categories/consejos.html">Consejos</a>
+                            <a href="categories/cuidados.html">Cuidados</a>
+                        </div>
+                        <a href="articles/article-3.html" class="read-more">Leer más</a>
+                    </article>
+                </div>
+
+                <!-- Barra Lateral -->
+                <aside class="blog-sidebar">
+                    <!-- Sobre nosotros -->
+                    <div class="sidebar-widget about-widget">
+                        <h3>Sobre Patitas Unidas</h3>
+                        <div class="about-content">
+                            <img src="../img/blog/about-sidebar.jpg" alt="Patitas Unidas">
+                            <p>Somos una plataforma que conecta a adoptantes con los mejores refugios de mascotas cercanos, facilitando el proceso de adopción y ayudando a más animales a encontrar hogares amorosos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Categorías -->
+                    <div class="sidebar-widget categories-widget">
+                        <h3>Categorías</h3>
+                        <ul>
+                            <li><a href="categories/cuidados.html">Cuidados Básicos <span>(12)</span></a></li>
+                            <li><a href="categories/rescates.html">Historias de Rescate <span>(8)</span></a></li>
+                            <li><a href="categories/adopcion.html">Adopción <span>(15)</span></a></li>
+                            <li><a href="categories/adiestramiento.html">Adiestramiento <span>(7)</span></a></li>
+                            <li><a href="categories/salud.html">Salud y Bienestar <span>(10)</span></a></li>
+                            <li><a href="categories/eventos.html">Eventos y Campañas <span>(5)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Etiquetas -->
+                    <div class="sidebar-widget tags-widget">
+                        <h3>Etiquetas</h3>
+                        <div class="tags-cloud">
+                            <a href="#">Perros</a>
+                            <a href="#">Gatos</a>
+                            <a href="#">Adopción</a>
+                            <a href="#">Alimentación</a>
+                            <a href="#">Veterinario</a>
+                            <a href="#">Rescate</a>
+                            <a href="#">Cuidados</a>
+                            <a href="#">Entrenamiento</a>
+                            <a href="#">Salud</a>
+                            <a href="#">Eventos</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../img/logo-white.png" alt="Patitas Unidas Logo">
+                    <p>Conectando corazones con refugios de confianza</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html#sobre-nosotros">Sobre nosotros</a></li>
+                        <li><a href="../index.html#refugios">Refugios</a></li>
+                        <li><a href="../index.html#mascotas">Mascotas</a></li>
+                        <li><a href="../index.html#adopcion">Adopción</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Patitas Unidas. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* Estilos responsivos para diferentes dispositivos */ 
+/* Estilos responsivos para Patitas Felices */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Header */
+    .cta-header {
+        display: none;
+    }
+    
+    /* Sobre Nosotros */
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-stats {
+        justify-content: space-between;
+    }
+    
+    /* Proceso de Adopción */
+    .adoption-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .step {
+        width: 80%;
+    }
+    
+    .step:not(:last-child):after {
+        display: none;
+    }
+    
+    /* Cómo Ayudar */
+    .help-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Contacto */
+    .contact-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    #header .container {
+        position: relative;
+    }
+    
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-bg);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        gap: 10px;
+        display: none;
+    }
+    
+    .menu.active {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    /* Banner */
+    #banner {
+        padding: 150px 0 80px;
+    }
+    
+    .banner-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .banner-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Sobre Nosotros */
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .team-member {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Mascotas */
+    .pet-filters {
+        flex-wrap: wrap;
+    }
+    
+    /* Testimonios */
+    .testimonial-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Blog */
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-links h4:after,
+    .footer-social h4:after,
+    .footer-newsletter h4:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    /* Banner */
+    #banner {
+        padding: 130px 0 60px;
+    }
+    
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .banner-content p {
+        font-size: 1rem;
+    }
+    
+    /* Adopción */
+    .pre-adoption-form {
+        padding: 20px;
+    }
+    
+    /* Testimonios */
+    .testimonial-item {
+        padding: 20px;
+    }
+    
+    /* Footer */
+    .footer-newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-newsletter input,
+    .footer-newsletter button {
+        width: 100%;
+        border-radius: 6px;
+    }
+}
