@@ -1306,3 +1306,51 @@
         gap: 5px;
     }
 }
+
+/* MEJORAS RESPONSIVAS Y DE USABILIDAD */
+@media (max-width: 600px) {
+    .blog-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .blog-sidebar {
+        margin-top: 30px;
+    }
+    .blog-posts {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .blog-post .post-image {
+        height: 120px;
+    }
+    .blog-post h2 {
+        font-size: 1.1rem;
+    }
+    .blog-hero-content, .article-hero-content {
+        padding: 12px 4px 10px 4px;
+    }
+    .sidebar-widget {
+        padding: 18px;
+    }
+    .tags-cloud a, .post-tags a {
+        font-size: 0.85rem;
+        padding: 4px 10px;
+    }
+    .popular-img {
+        width: 50px;
+        height: 50px;
+    }
+    .article-featured-image {
+        height: 160px;
+    }
+    .article-content, .article-body, .comments-section {
+        padding: 10px;
+    }
+}
+
+/* Mejora de accesibilidad para botones táctiles en blog */
+@media (hover: none) and (pointer: coarse) {
+    .read-more, .filter-btn, .tags-cloud a, .post-tags a {
+        min-height: 44px;
+    }
+}

@@ -1032,3 +1032,79 @@ main {
 .back-to-top.visible {
     opacity: 1;
 }
+
+/* MEJORAS RESPONSIVAS Y DE USABILIDAD */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 8px;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    section {
+        padding: 40px 0 30px 0;
+    }
+    .btn, .btn-primary, .btn-secondary, .btn-accent {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+        border-radius: 18px;
+    }
+    .banner-content h1 {
+        font-size: 1.2rem;
+    }
+    .banner-content p {
+        font-size: 0.95rem;
+    }
+    .about-content, .contact-content {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .team-grid {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+    .pet-card img {
+        height: 160px;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        text-align: center;
+    }
+    .footer-newsletter form {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer-newsletter input, .footer-newsletter button {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .footer-legal {
+        justify-content: center;
+    }
+    .menu {
+        font-size: 1rem;
+    }
+    .menu li a {
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* Mejora de accesibilidad para botones táctiles */
+@media (hover: none) and (pointer: coarse) {
+    .btn, .btn-primary, .btn-secondary, .btn-accent {
+        min-height: 44px;
+    }
+}
